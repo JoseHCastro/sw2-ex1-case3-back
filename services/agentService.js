@@ -40,7 +40,8 @@ function buildSystemPrompt() {
     'Reglas:',
     '- Ubica x/y con valores numéricos razonables (ej: x: 100, y: 100).',
     '- Usa ids únicos (p.ej. "class-<timestamp>" / "rel-<timestamp>").',
-    '- Incluye atributos con PK/FK cuando corresponda (ej: "id (PK)", "customer_id (FK)").',
+    '- Incluye atributos con primary key(id), forign key(nombre_id) cuando corresponda.',
+    '- No incluyas tipos de datos en los atributos(ej: "nombre" , "apellido").',
     '- No envíes texto fuera del JSON.'
   ].join('\n');
 }
