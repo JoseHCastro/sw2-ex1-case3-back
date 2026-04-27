@@ -336,6 +336,8 @@ app.get('/api/utils/canvas-autofit', (req, res) => {
 });
 
 // Iniciar el servidor
-server.listen(port, host, () => {
-  console.log(`Servidor corriendo en http://${host}:${port}`);
+server.listen(port, () => {
+  console.log(`Servidor corriendo en el puerto ${port}`);
+  console.log(`Entorno: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`Base de datos configurada en: ${process.env.DB_HOST || 'localhost'}`);
 });
