@@ -19,7 +19,7 @@ const http = require('http');
 
 const app = express();
 const port = process.env.PORT || 3001;
-const host = process.env.HOST || 'localhost';
+const host = process.env.HOST || '0.0.0.0';
 
 // Crear el servidor HTTP
 const server = http.createServer(app);
